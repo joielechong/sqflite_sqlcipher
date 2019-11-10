@@ -1,6 +1,6 @@
 # sqflite_sqlcipher
 
-This is a fork from the plugin [sqflite](https://github.com/tekartik/sqflite).  **Up to date with version 1.1.7+1**
+This is a fork from the plugin [sqflite](https://github.com/tekartik/sqflite).  **Up to date with version 1.1.7+2**
 
 This fork adds an optional parameter "password" to open encrypted databases.
 
@@ -16,14 +16,14 @@ dependencies:
 dependency_overrides:
   sqflite:
     git:
-      url: https://www.github.com/davidmartos96/sqflite_sqlcipher.git
+      url: https://www.github.com/joielechong/sqflite_sqlcipher.git
       path: sqflite
       ref: 13d0fd521664f762b0673733447dea5cebd6d0d2
 ```
 Dependency overrides are used to avoid conflict with other projects that depend on "normal" sqflite. For example https://github.com/renefloor/flutter_cache_manager
 
 ### iOS
-To use SqlCipher version 4 and be consitent on both Android and iOS, include this in the Podfile
+To use SqlCipher version 4 and be consistent on both Android and iOS, include this in the Podfile
 ```
 pod 'SQLCipher', '~>4.1.0'
 ```
@@ -44,7 +44,7 @@ SQLite plugin for [Flutter](https://flutter.io).
 Supports both iOS and Android.
 
 * Support transactions and batches
-* Automatic version managment during open
+* Automatic version management during open
 * Helpers for insert/query/update/delete queries
 * DB operation executed in a background thread on iOS and Android
 
